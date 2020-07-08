@@ -1,0 +1,14 @@
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.deps.json
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.runtimeconfig.json
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.runtimeconfig.dev.json
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.dll
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.csprojAssemblyReference.cache
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.csproj.CoreCompileInputs.cache
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.RazorAssemblyInfo.cache
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.RazorAssemblyInfo.cs
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.AssemblyInfoInputs.cache
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.AssemblyInfo.cs
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.RazorTargetAssemblyInfo.cache
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.pdb
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.dll
+D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.pdb
