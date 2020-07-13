@@ -12,6 +12,7 @@ D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.R
 D:\Workspace\CSharpProjects\UsersApi\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.pdb
 D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.dll
 D:\Workspace\CSharpProjects\UsersApi\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.pdb
+<<<<<<< HEAD
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.deps.json
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.runtimeconfig.json
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UsersApi\bin\Debug\netcoreapp2.1\UsersApi.runtimeconfig.dev.json
@@ -31,3 +32,5 @@ D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\Users
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UsersApi\obj\Debug\netcoreapp2.1\UsersApi.pdb
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UsersApi\bin\Debug\netcoreapp2.1\BusinessLogic.dll
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UsersApi\bin\Debug\netcoreapp2.1\BusinessLogic.pdb
+=======
+>>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff

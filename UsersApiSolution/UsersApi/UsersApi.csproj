@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
     <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
+<<<<<<< HEAD
     <PackageReference Include="SimpleInjector" Version="5.0.2" />
     <PackageReference Include="SimpleInjector.Integration.AspNetCore" Version="5.0.0" />
     <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc" Version="5.0.0" />
@@ -21,6 +22,8 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj" />
     <ProjectReference Include="..\DbComm\DbComm.csproj" />
+=======
+>>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
   </ItemGroup>
 
 </Project>
