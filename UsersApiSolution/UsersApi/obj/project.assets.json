@@ -1515,7 +1515,6 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {}
         }
       },
-<<<<<<< HEAD
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "compile": {
@@ -1525,8 +1524,6 @@
           "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
       "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
         "type": "package"
       },
@@ -2858,11 +2855,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-<<<<<<< HEAD
       "Newtonsoft.Json/12.0.3": {
-=======
-      "Newtonsoft.Json/11.0.2": {
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -3149,7 +3142,6 @@
           "lib/netstandard2.0/SharpCompress.dll": {}
         }
       },
-<<<<<<< HEAD
       "SimpleInjector/5.0.2": {
         "type": "package",
         "dependencies": {
@@ -3237,8 +3229,6 @@
           "lib/netstandard2.0/SimpleInjector.Integration.ServiceCollection.dll": {}
         }
       },
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5113,7 +5103,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-<<<<<<< HEAD
       },
       "BusinessLogic/1.0.0": {
         "type": "project",
@@ -5142,8 +5131,6 @@
         "runtime": {
           "bin/placeholder/DbComm.dll": {}
         }
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
       }
     }
   },
@@ -6434,7 +6421,6 @@
         "microsoft.aspnetcore.webutilities.nuspec"
       ]
     },
-<<<<<<< HEAD
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
       "type": "package",
@@ -6459,8 +6445,6 @@
         "version.txt"
       ]
     },
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
       "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
       "type": "package",
@@ -8329,17 +8313,10 @@
         "netstandard.library.nuspec"
       ]
     },
-<<<<<<< HEAD
     "Newtonsoft.Json/12.0.3": {
       "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
       "path": "newtonsoft.json/12.0.3",
-=======
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "type": "package",
-      "path": "newtonsoft.json/11.0.2",
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8362,14 +8339,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-<<<<<<< HEAD
         "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
-=======
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
@@ -8736,7 +8708,6 @@
         "sharpcompress.nuspec"
       ]
     },
-<<<<<<< HEAD
     "SimpleInjector/5.0.2": {
       "sha512": "wEVyMb+V21wvwzq+Msm8EycmbDIs8FUv2B00Ls03udOGcWubMMaDyC8bwIc63dDbRYvHVkDuoHHX1VIqtZxUtg==",
       "type": "package",
@@ -8831,8 +8802,6 @@
         "simpleinjector.png"
       ]
     },
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -13823,7 +13792,6 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-<<<<<<< HEAD
     },
     "BusinessLogic/1.0.0": {
       "type": "project",
@@ -13834,29 +13802,20 @@
       "type": "project",
       "path": "../DbComm/DbComm.csproj",
       "msbuildProject": "../DbComm/DbComm.csproj"
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-<<<<<<< HEAD
       "BusinessLogic >= 1.0.0",
       "DbComm >= 1.0.0",
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
-<<<<<<< HEAD
       "MongoDB.Driver >= 2.10.4",
       "SimpleInjector >= 5.0.2",
       "SimpleInjector.Integration.AspNetCore >= 5.0.0",
       "SimpleInjector.Integration.AspNetCore.Mvc >= 5.0.0"
-=======
-      "MongoDB.Driver >= 2.10.4"
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
     ]
   },
   "packageFolders": {
@@ -13866,19 +13825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\UsersApi\\UsersApi.csproj",
       "projectName": "UsersApi",
       "projectPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\UsersApi\\UsersApi.csproj",
       "packagesPath": "C:\\Users\\Wally\\.nuget\\packages\\",
       "outputPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\UsersApi\\obj\\",
-=======
-      "projectUniqueName": "D:\\TabidooWork\\TabidooCoding\\CSharpApi\\UsersApi\\UsersApi\\UsersApi.csproj",
-      "projectName": "UsersApi",
-      "projectPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi\\UsersApi\\UsersApi\\UsersApi.csproj",
-      "packagesPath": "C:\\Users\\Wally\\.nuget\\packages\\",
-      "outputPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi\\UsersApi\\UsersApi\\obj\\",
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13896,7 +13847,6 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-<<<<<<< HEAD
           "projectReferences": {
             "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\BusinessLogic\\BusinessLogic.csproj": {
               "projectPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\BusinessLogic\\BusinessLogic.csproj"
@@ -13905,9 +13855,6 @@
               "projectPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\DbComm\\DbComm.csproj"
             }
           }
-=======
-          "projectReferences": {}
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
         }
       },
       "warningProperties": {
@@ -13942,7 +13889,6 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.10.4, )"
-<<<<<<< HEAD
           },
           "SimpleInjector": {
             "target": "Package",
@@ -13955,8 +13901,6 @@
           "SimpleInjector.Integration.AspNetCore.Mvc": {
             "target": "Package",
             "version": "[5.0.0, )"
-=======
->>>>>>> 4077e494a1c9985f068e6f701635159e7cfe96ff
           }
         },
         "imports": [
