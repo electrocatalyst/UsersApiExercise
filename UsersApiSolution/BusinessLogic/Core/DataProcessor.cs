@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using BusinessLogic.Logging;
-using BusinessLogic.Parsers;
+using BusinessLogic.Mappers;
 using DbComm.Db;
 using DbComm.Models;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using Dto;
 
 namespace BusinessLogic.Core
 {
@@ -14,40 +12,52 @@ namespace BusinessLogic.Core
     {
         private readonly ILogger _logger;
         private readonly IUserDbAccessLayer _dbmanager;
+        private readonly IParsingManager _parsingManager;
 
 
-        public DataProcessor(ILogger logger, IUserDbAccessLayer dbmanager)
+        public DataProcessor(ILogger logger, IUserDbAccessLayer dbmanager, IParsingManager parsingManager)
         {
             _logger = logger;
             _dbmanager = dbmanager;
+            _parsingManager = parsingManager;
         }
 
 
         public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
         {
             _logger.LogMessage("Retrieved users from db.");
-            return await _dbmanager.GetUsersAsync();
+            List<UserDb> dbCollection = await _dbmanager.GetUsersAsync();
+            List<UserDto> dtoCollection = dbCollection.ConvertAll(UserModelMapper.UserDbToDtoModel);
+
+            return dtoCollection;
         }
 
         public async Task<UserDto> GetOneUserAsync(string id)
         {
             _logger.LogMessage("Retrieved a user from db.");
-            return await _dbmanager.GetUserAsync(id);
+            UserDb userdb = await _dbmanager.GetUserAsync(id);
+            UserDto userdto = UserModelMapper.UserDbToDtoModel(userdb);
+
+            return userdto;
         }
 
         public async Task SaveNewPersonAsync(string person)
         {
-            var userDto = this.ParseData(person);
-            
-            await _dbmanager.InsertUserAsync(userDto);
+            var userDto = _parsingManager.ParseData(person: person);
+
+            UserDb userdb = UserModelMapper.UserDtoToDbModel(userDto);
+
+            await _dbmanager.InsertUserAsync(userdb);
             _logger.LogMessage("Saved a user to db.");
         }
 
         public async Task UpdateExistingUserAsync(string id, string person)
         {
-            var userDto = this.ParseData(person);
+            var userDto = _parsingManager.ParseData(person);
 
-            await _dbmanager.UpdateUserAsync(id, userDto);
+            UserDb userdb = UserModelMapper.UserDtoToDbModel(userDto);
+
+            await _dbmanager.UpdateUserAsync(id, userdb);
             _logger.LogMessage("Updated a user in db.");
         }
 
@@ -55,30 +65,6 @@ namespace BusinessLogic.Core
         {
             await _dbmanager.DeleteUserAsync(id);
             _logger.LogMessage("Deleted a user from db.");
-        }
-
-
-        private UserDto ParseData(string person)
-        {
-            // Check parser and convert data to one of the user objects
-            JObject requestBody = JObject.Parse(person);
-
-            Type type = Type.GetType(typeName: requestBody["parser"]?.ToString() ?? string.Empty);
-            IParser parser = (IParser)Activator.CreateInstance(type ?? typeof(UserParser));
-
-            // Get JSON object from the request body
-            var userData = (JObject)requestBody["person"];
-
-            // Deserialize JSON into a C# object
-            if (userData != null)
-            {
-                IPersonDto nonStandardizedPerson = JsonConvert.DeserializeObject<CocaColaUserDto>(userData.ToString());
-
-                UserDto userDto = parser.ConvertToStandardizedUserDto(nonStandardizedPerson);
-
-                return userDto;
-            }
-            else return null;
         }
     }
 }

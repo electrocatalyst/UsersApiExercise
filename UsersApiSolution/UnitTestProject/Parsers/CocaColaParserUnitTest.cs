@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessLogic.Parsers;
-using DbComm.Models;
-using MongoDB.Bson;
+using Dto;
 
 namespace UnitTestProject.Parsers
 {
@@ -13,7 +12,7 @@ namespace UnitTestProject.Parsers
         {
             var user = new CocaColaUserDto
             {
-                Id = new ObjectId("5f06df76a9bca433b45acb95"),
+                Id = "5f06df76a9bca433b45acb95",
                 Email = "employee@cocacola.com",
                 Fullname = "John Smith",
                 Age = 30

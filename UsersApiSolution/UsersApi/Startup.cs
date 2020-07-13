@@ -55,6 +55,7 @@ namespace UsersApi
             app.UseSimpleInjector(Container);
             Container.Register<ILogger, FileLogger>();
             Container.Register<IDataProcessor, DataProcessor>();
+            Container.Register<IParsingManager, ParsingManager>();
             Container.Register<IUserDbAccessLayer, UserDbMongo>(); // TODO: what if I don't have a reference to the Db project? Can I register dependencies for it?
             
             Container.Verify();

@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessLogic.Parsers;
-using DbComm.Models;
-using MongoDB.Bson;
+using Dto;
 
 namespace UnitTestProject.Parsers
 {
@@ -11,12 +10,12 @@ namespace UnitTestProject.Parsers
         [TestMethod]
         public void ConvertUserTest()
         {
-            SpaceXUserDto user = new SpaceXUserDto();
-            user.Id = new ObjectId("5f06df76a9bca433b45acb95");
+            var user = new SpaceXUserDto();
+            user.Id = "5f06df76a9bca433b45acb95";
             user.Email = "employee@cocacola.com";
             user.Fullname = "John Smith";
 
-            SpaceXParser ccparser = new SpaceXParser();
+            var ccparser = new SpaceXParser();
             var userDb = ((IParser)ccparser).ConvertToStandardizedUserDto(user);
 
             Assert.AreEqual(user.Id, userDb.Id);

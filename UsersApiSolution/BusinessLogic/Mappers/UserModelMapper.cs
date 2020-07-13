@@ -1,13 +1,15 @@
 ﻿using DbComm.Models;
+using Dto;
+using MongoDB.Bson;
 
-namespace DbComm.Mappers
+namespace BusinessLogic.Mappers
 {
-    internal class UserModelMapper
+    public class UserModelMapper
     {
         public static UserDb UserDtoToDbModel(UserDto user) =>
             new UserDb()
             {
-                Id = user.Id,
+                Id = ObjectId.Parse(user.Id),
                 Email = user.Email,
 
                 Nickname = user.Nickname,
@@ -19,7 +21,7 @@ namespace DbComm.Mappers
         public static UserDto UserDbToDtoModel(UserDb user) =>
             new UserDto()
             {
-                Id = user.Id,
+                Id = user.Id.ToString(),
                 Email = user.Email,
 
                 Nickname = user.Nickname,

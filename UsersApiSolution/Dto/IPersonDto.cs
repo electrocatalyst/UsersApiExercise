@@ -1,10 +1,9 @@
-﻿using MongoDB.Bson;
-
-namespace DbComm.Models
+﻿
+namespace Dto
 {
     public interface IPersonDto
     {
-        ObjectId Id { get; set; }
+        string Id { get; set; }
 
         string Email { get; set; }
     }

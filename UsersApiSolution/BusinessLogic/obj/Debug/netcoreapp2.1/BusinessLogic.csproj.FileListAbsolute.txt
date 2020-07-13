@@ -10,3 +10,5 @@ D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\Busin
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.csproj.CopyComplete
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.dll
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.pdb
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\bin\Debug\netcoreapp2.1\Dto.dll
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\bin\Debug\netcoreapp2.1\Dto.pdb

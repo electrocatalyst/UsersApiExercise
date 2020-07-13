@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DbComm\DbComm.csproj" />
+    <ProjectReference Include="..\Dto\Dto.csproj" />
   </ItemGroup>
 
 </Project>

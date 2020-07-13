@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using BusinessLogic.Core;
 using BusinessLogic.Logging;
 using Microsoft.AspNetCore.Mvc;
-using DbComm.Models;
+using Dto;
 
 
 namespace UsersApi.Controllers

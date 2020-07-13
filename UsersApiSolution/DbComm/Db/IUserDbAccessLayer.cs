@@ -7,13 +7,13 @@ namespace DbComm.Db
 {
     public interface IUserDbAccessLayer
     {
-        Task<ObjectId> InsertUserAsync(UserDto userdto);
+        Task<ObjectId> InsertUserAsync(UserDb userdto);
 
-        Task UpdateUserAsync(string id, UserDto userdto);
+        Task UpdateUserAsync(string id, UserDb userdto);
 
-        Task<UserDto> GetUserAsync(string id);
+        Task<UserDb> GetUserAsync(string id);
 
-        Task<List<UserDto>> GetUsersAsync();
+        Task<List<UserDb>> GetUsersAsync();
 
         Task DeleteUserAsync(string id);
     }

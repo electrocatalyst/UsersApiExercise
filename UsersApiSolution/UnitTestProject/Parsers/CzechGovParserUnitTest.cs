@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessLogic.Parsers;
-using DbComm.Models;
-using MongoDB.Bson;
+using Dto;
 
 namespace UnitTestProject.Parsers
 {
@@ -12,7 +11,7 @@ namespace UnitTestProject.Parsers
         public void ConvertUserTest()
         {
             CzechGovUserDto user = new CzechGovUserDto();
-            user.Id = new ObjectId("5f06df76a9bca433b45acb95");
+            user.Id = "5f06df76a9bca433b45acb95";
             user.Email = "employee@cocacola.com";
             user.FirstName = "John";
             user.LastName = "Smith";

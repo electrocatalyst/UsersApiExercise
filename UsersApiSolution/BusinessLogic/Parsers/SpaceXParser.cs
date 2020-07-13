@@ -1,4 +1,4 @@
-﻿using DbComm.Models;
+﻿using Dto;
 
 namespace BusinessLogic.Parsers
 {

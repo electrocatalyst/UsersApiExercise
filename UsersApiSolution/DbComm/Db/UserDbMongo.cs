@@ -2,7 +2,6 @@
 using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using DbComm.Mappers;
 using DbComm.Models;
 
 namespace DbComm.Db
@@ -19,40 +18,36 @@ namespace DbComm.Db
 
         private IMongoDatabase _usersdb;
 
-        public async Task<ObjectId> InsertUserAsync(UserDto userdto)
+        public async Task<ObjectId> InsertUserAsync(UserDb userdb)
         {
-            UserDb user = UserModelMapper.UserDtoToDbModel(userdto);
-
             var collection = _usersdb.GetCollection<UserDb>("Users");
-            await collection.InsertOneAsync(user);
-            return user.Id;
+            await collection.InsertOneAsync(userdb);
+            return userdb.Id;
         }
 
-        public async Task UpdateUserAsync(string id, UserDto userdto)
+        public async Task UpdateUserAsync(string id, UserDb userdb)
         {
-            if(userdto != null && userdto.Id == ObjectId.Empty)
-                userdto.Id = ObjectId.Parse(id);
+            if(userdb != null && userdb.Id == ObjectId.Empty)
+                userdb.Id = ObjectId.Parse(id);
 
-            UserDb user = UserModelMapper.UserDtoToDbModel(userdto);
+            
 
             var collection = _usersdb.GetCollection<UserDb>("Users");
-            await collection.ReplaceOneAsync(u => u.Id == ObjectId.Parse(id), user, new ReplaceOptions { IsUpsert = true });
+            await collection.ReplaceOneAsync(u => u.Id == ObjectId.Parse(id), userdb, new ReplaceOptions { IsUpsert = true });
         }
 
-        public async Task<UserDto> GetUserAsync(string id)
+        public async Task<UserDb> GetUserAsync(string id)
         {
             var collection = _usersdb.GetCollection<UserDb>("Users");
             var userdb = await collection.Find(u => u.Id == ObjectId.Parse(id)).FirstOrDefaultAsync();
-
-            UserDto result = UserModelMapper.UserDbToDtoModel(userdb);
-
-            return result;
+            
+            return userdb;
         }
 
-        public async Task<List<UserDto>> GetUsersAsync()
+        public async Task<List<UserDb>> GetUsersAsync()
         {
             // FIXME: the returned collection should contain Dto objects
-            var collection = await _usersdb.GetCollection<UserDto>("Users").Find(_ => true).ToListAsync();
+            var collection = await _usersdb.GetCollection<UserDb>("Users").Find(_ => true).ToListAsync();
             return collection;
         }
 

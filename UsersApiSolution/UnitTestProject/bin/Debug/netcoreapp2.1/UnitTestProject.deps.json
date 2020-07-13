@@ -1612,6 +1612,7 @@
       "BusinessLogic/1.0.0": {
         "dependencies": {
           "DbComm": "1.0.0",
+          "Dto": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "SimpleInjector": "5.0.2"
         },
@@ -1625,6 +1626,11 @@
         },
         "runtime": {
           "DbComm.dll": {}
+        }
+      },
+      "Dto/1.0.0": {
+        "runtime": {
+          "Dto.dll": {}
         }
       }
     }
@@ -2439,6 +2445,11 @@
       "sha512": ""
     },
     "DbComm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -17,3 +17,5 @@ D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UnitT
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UnitTestProject\obj\Debug\netcoreapp2.1\UnitTestProject.csproj.CopyComplete
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UnitTestProject\obj\Debug\netcoreapp2.1\UnitTestProject.dll
 D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UnitTestProject\obj\Debug\netcoreapp2.1\UnitTestProject.pdb
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UnitTestProject\bin\Debug\netcoreapp2.1\Dto.dll
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\UnitTestProject\bin\Debug\netcoreapp2.1\Dto.pdb

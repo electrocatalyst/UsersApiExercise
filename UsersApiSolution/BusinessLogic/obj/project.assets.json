@@ -1677,6 +1677,16 @@
         "runtime": {
           "bin/placeholder/DbComm.dll": {}
         }
+      },
+      "Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dto.dll": {}
+        }
       }
     }
   },
@@ -5798,11 +5808,17 @@
       "type": "project",
       "path": "../DbComm/DbComm.csproj",
       "msbuildProject": "../DbComm/DbComm.csproj"
+    },
+    "Dto/1.0.0": {
+      "type": "project",
+      "path": "../Dto/Dto.csproj",
+      "msbuildProject": "../Dto/Dto.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "DbComm >= 1.0.0",
+      "Dto >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "Newtonsoft.Json >= 12.0.3",
       "SimpleInjector >= 5.0.2"
@@ -5840,6 +5856,9 @@
           "projectReferences": {
             "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\DbComm\\DbComm.csproj": {
               "projectPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\DbComm\\DbComm.csproj"
+            },
+            "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\Dto\\Dto.csproj": {
+              "projectPath": "D:\\TabidooWork\\TabidooCoding\\CSharpApi02\\UsersApiExercise\\UsersApiSolution\\Dto\\Dto.csproj"
             }
           }
         }

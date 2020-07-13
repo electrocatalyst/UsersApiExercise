@@ -11,7 +11,7 @@ namespace BusinessLogic.Logging
             Console.WriteLine("The log has been sent to an email address.");
         }
 
-        void SendLogEmail(string address, string msg)
+        private void SendLogEmail(string address, string msg)
         {
             (string, string) unused = (address, msg);
         }

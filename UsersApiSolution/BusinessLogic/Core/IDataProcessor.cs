@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using DbComm.Models;
+using Dto;
 
 namespace BusinessLogic.Core
 {
