@@ -1,0 +1,9 @@
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\bin\Debug\netcoreapp2.1\DbComm.deps.json
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\bin\Debug\netcoreapp2.1\DbComm.dll
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\obj\Debug\netcoreapp2.1\DbComm.csprojAssemblyReference.cache
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\obj\Debug\netcoreapp2.1\DbComm.csproj.CoreCompileInputs.cache
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\obj\Debug\netcoreapp2.1\DbComm.AssemblyInfoInputs.cache
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\obj\Debug\netcoreapp2.1\DbComm.AssemblyInfo.cs
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\bin\Debug\netcoreapp2.1\DbComm.pdb
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\obj\Debug\netcoreapp2.1\DbComm.dll
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\DbComm\obj\Debug\netcoreapp2.1\DbComm.pdb

@@ -1,0 +1,12 @@
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\bin\Debug\netcoreapp2.1\BusinessLogic.deps.json
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\bin\Debug\netcoreapp2.1\BusinessLogic.dll
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\bin\Debug\netcoreapp2.1\BusinessLogic.pdb
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\bin\Debug\netcoreapp2.1\DbComm.dll
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\bin\Debug\netcoreapp2.1\DbComm.pdb
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.csprojAssemblyReference.cache
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.AssemblyInfoInputs.cache
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.AssemblyInfo.cs
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.csproj.CopyComplete
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.dll
+D:\TabidooWork\TabidooCoding\CSharpApi02\UsersApiExercise\UsersApiSolution\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.pdb
