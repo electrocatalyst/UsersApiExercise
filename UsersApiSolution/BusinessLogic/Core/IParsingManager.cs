@@ -4,6 +4,6 @@ namespace BusinessLogic.Core
 {
     public interface IParsingManager
     {
-        UserDto ParseData(string person);
+        UserDto ParseData(string incomingData);
     }
 }

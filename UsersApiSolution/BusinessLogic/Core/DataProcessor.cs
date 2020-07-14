@@ -43,7 +43,7 @@ namespace BusinessLogic.Core
 
         public async Task SaveNewPersonAsync(string person)
         {
-            var userDto = _parsingManager.ParseData(person: person);
+            var userDto = _parsingManager.ParseData(incomingData: person);
 
             UserDb userdb = UserModelMapper.UserDtoToDbModel(userDto);
 

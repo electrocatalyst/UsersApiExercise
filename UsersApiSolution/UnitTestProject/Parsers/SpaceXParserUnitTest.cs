@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessLogic.Parsers;
 using Dto;
+using Newtonsoft.Json.Linq;
 
 namespace UnitTestProject.Parsers
 {
@@ -15,8 +16,10 @@ namespace UnitTestProject.Parsers
             user.Email = "employee@cocacola.com";
             user.Fullname = "John Smith";
 
-            var ccparser = new SpaceXParser();
-            var userDb = ((IParser)ccparser).ConvertToStandardizedUserDto(user);
+            JObject userJsonObject = JObject.Parse(Newtonsoft.Json.JsonConvert.SerializeObject(user));
+
+            var clientparser = new SpaceXParser();
+            var userDb = ((IParser)clientparser).ConvertToStandardizedUserDto(userJsonObject);
 
             Assert.AreEqual(user.Id, userDb.Id);
             Assert.AreEqual(user.Email, userDb.Email);

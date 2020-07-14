@@ -1,6 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessLogic.Parsers;
 using Dto;
+using MongoDB.Bson.IO;
+using Newtonsoft.Json.Linq;
 
 namespace UnitTestProject.Parsers
 {
@@ -18,8 +20,10 @@ namespace UnitTestProject.Parsers
                 Age = 30
             };
 
-            var ccparser = new CocaColaParser();
-            var userDb = ((IParser)ccparser).ConvertToStandardizedUserDto(user);
+            var userJsonObject = JObject.Parse( Newtonsoft.Json.JsonConvert.SerializeObject(user) );
+
+            var clientparser = new CocaColaParser();
+            var userDb = ((IParser)clientparser).ConvertToStandardizedUserDto(userJsonObject);
 
             Assert.AreEqual(user.Id, userDb.Id);
             Assert.AreEqual(user.Email, userDb.Email);

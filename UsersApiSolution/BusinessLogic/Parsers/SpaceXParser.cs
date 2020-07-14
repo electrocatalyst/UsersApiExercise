@@ -1,12 +1,13 @@
 ﻿using Dto;
+using Newtonsoft.Json.Linq;
 
 namespace BusinessLogic.Parsers
 {
     public class SpaceXParser : IParser
     {
-        UserDto IParser.ConvertToStandardizedUserDto(IPersonDto person)
+        UserDto IParser.ConvertToStandardizedUserDto(JObject person)
         {
-            SpaceXUserDto ccperson = (SpaceXUserDto) person;
+            SpaceXUserDto ccperson = Newtonsoft.Json.JsonConvert.DeserializeObject<SpaceXUserDto>(person.ToString());
 
             UserDto user = new UserDto();
             user.Id = ccperson.Id;

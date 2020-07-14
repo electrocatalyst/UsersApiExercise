@@ -1,12 +1,13 @@
 ﻿using Dto;
+using Newtonsoft.Json.Linq;
 
 namespace BusinessLogic.Parsers
 {
     public class CzechGovParser : IParser
     {
-        UserDto IParser.ConvertToStandardizedUserDto(IPersonDto person)
+        UserDto IParser.ConvertToStandardizedUserDto(JObject person)
         {
-            CzechGovUserDto ccperson = (CzechGovUserDto) person;
+            CzechGovUserDto ccperson = Newtonsoft.Json.JsonConvert.DeserializeObject<CzechGovUserDto>(person.ToString());
 
             UserDto user = new UserDto();
             user.Id = ccperson.Id;
