@@ -48,7 +48,7 @@ namespace BusinessLogic.Core
             UserDb userdb = UserModelMapper.UserDtoToDbModel(userDto);
 
             await _dbmanager.InsertUserAsync(userdb);
-            _logger.LogMessage("Saved a user to db.");
+            _logger.LogMessage("Saved a user to db."); // if this is not here, the test should fail
         }
 
         public async Task UpdateExistingUserAsync(string id, string person)

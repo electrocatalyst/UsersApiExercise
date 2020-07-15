@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading.Tasks;
+using BusinessLogic.Core;
 using BusinessLogic.Logging;
+using DbComm.Db;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
@@ -15,21 +15,53 @@ namespace UnitTestProject.Db
         // TODO: use logger
 
         [TestMethod]
-        public void TestCRUD()
+        public async Task CreateTest()
         {
+            // Create the mock
+            var mock = new Mock<ILogger>();
+
+            // Configure the mock to do something
+            mock.Setup(x => x.LogMessage("test")).Returns(true);
+            
+            // Demonstrate that the configuration works
+            Assert.AreEqual(true, mock.Object.LogMessage("test"));
 
 
-            //// Create the mock
-            //var mock = new Mock<ILogger>();
+            // perform the db saving here
+            var dataproc = new DataProcessor(mock.Object, new UserDbMongo(), new ParsingManager());
+            await dataproc.SaveNewPersonAsync(GenerateJsonData("CocaColaParser"));
+            
 
-            //// Configure the mock to do something
-            //mock.SetupGet(x => x.LogMessage).Returns("FixedValue");
+            // Verify that the mock was invoked (the method LogMessage was called when performing DataProcessing work)
+            mock.Verify(x => x.LogMessage("test"));
+            // verify() passes even if I don't call the SaveNewPersonAsync() method
 
-            //// Demonstrate that the configuration works
-            //Assert.AreEqual("FixedValue", mock.Object.LogMessage);
 
-            //// Verify that the mock was invoked
-            //mock.VerifyGet(x => x.LogMessage);
         }
+
+
+
+
+        
+
+        private string GenerateJsonData(string parserName)
+        {
+            string incomingJson = $"{{" +
+                                  $"parser: \"{parserName}\", " +
+                                  $"person: {{" +
+                                  $"    Id: \"\"," +
+                                  $"    Email: \"{_email}\"," +
+                                  $"    Fullname: \"{_firstname} {_lastname}\"," +
+                                  $"    Age: \"{_age}\"," +
+                                  $"    }}" +
+                                  $"}}";
+
+            return incomingJson;
+        }
+
+        private string _email = "coke@cocacola.com";
+        private string _firstname = "John";
+        private string _lastname = "Wick";
+        private int _age = 30;
     }
 }
